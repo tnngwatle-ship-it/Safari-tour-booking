@@ -1,0 +1,333 @@
+/*body {
+    background-image: url(safari/herd\ of\ elephants.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}*/
+
+/* --- RESET & BASE STYLES --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+:root {
+  --primary-color: #2d5a27; /* Forest Green */
+  --secondary-color: #d4a373; /* Savanna Sand */
+  --accent-color: #bc6c25; /* Earthy Orange */
+  --dark-text: #2b2d42;
+  --light-bg: #f8f9fa;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--dark-text);
+  line-height: 1.6;
+}
+
+/* --- NAVIGATION --- */
+.header {
+  background-color: var(--white);
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark-text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  height: 80vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('https://images.unsplash.com/photo-1516422213484-2144583b382d?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+#home {
+    background-image: url(safari/sunset.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    font-weight: bold;
+    
+}
+
+.hero-content-container {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* --- BUTTONS --- */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: var(--accent-color);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+/* --- SECTION LAYOUTS --- */
+.section {
+  padding: 80px 5%;
+}
+
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: var(--primary-color);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* --- GRID & CARDS --- */
+.card-grid {
+  display: grid;
+  height: 50%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /*object-fit: cover;*/
+}
+
+.card h3 {
+  margin: 15px 0;
+}
+
+.card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card a {
+    color: blue;
+}
+
+.price {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* --- GALLERY --- */
+
+#gallery {
+    background-image: url(safari/buffalo\ herd.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+  filter: brightness(80%);
+  cursor: pointer;
+}
+
+/* --- FORMS --- */
+.booking-form, .contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.back-link-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.back-to-home-link {
+    display: inline-block;
+    padding: 12px 26px;
+    border: 2px solid #c59d5f;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.back-to-home-link:hover {
+    background: #97f204;
+    color: #0000003d;
+    box-shadow: 0 0 20px rgba(198, 172, 23, 0.6);
+}
+
+/* --- FOOTER --- */
+.footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
