@@ -94,7 +94,7 @@ body {
 }
 
 #home {
-    background-image: url(safari/sunset.jpg);
+    background-image: url(sunset.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -238,7 +238,7 @@ body {
 /* --- GALLERY --- */
 
 #gallery {
-    background-image: url(safari/buffalo\ herd.jpg);
+    background-image: url(buffalo herd.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
