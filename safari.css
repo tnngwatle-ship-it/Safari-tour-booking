@@ -238,7 +238,7 @@ body {
 /* --- GALLERY --- */
 
 #gallery {
-    background-image: url(buffalo herd.jpg);
+    background-image: url(buffalo\ herd.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
